@@ -1,16 +1,23 @@
 import { View, Text } from 'react-native'
-import React from 'react'
+import { SafeAreaView } from 'react-native-safe-area-context'
+import React, { useLayoutEffect } from 'react'
 import { StyleSheet } from 'react-native'
 import { StatusBar } from 'expo-status-bar';
 import { useNavigation } from '@react-navigation/native';
 const HomeScreen = () => {
 
 const navigation = useNavigation();
+
+useLayoutEffect(()=>{
+    navigation.setOptions({
+        headerShown: false,
+    })
+}, [])
   return (
-    <View className="flex-1 items-center justify-center bg-white">
-      <Text classname="text-red-500">Ira Thamman is GORGEOUS!</Text>
+    <SafeAreaView>
+      <Text>Home Screen</Text>
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   )
 }
 export default HomeScreen
