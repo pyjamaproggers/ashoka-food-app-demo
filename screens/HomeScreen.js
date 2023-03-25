@@ -1,8 +1,9 @@
-import { View, Text, Image, TextInput } from 'react-native'
+import { View, Text, Image, TextInput, ScrollView } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import React, { useLayoutEffect } from 'react'
 import { useNavigation } from '@react-navigation/native';
 import AshokaLogo from '../assets/ASHOKAWHITELOGO.png';
+import Categories from './Categories';
 import {
   UserIcon,
   ChevronDownIcon,
@@ -40,12 +41,22 @@ useLayoutEffect(()=>{
         <View className="flex-row space-x-2 flex-1 bg-gray-200 p-3">
           <MagnifyingGlassIcon color="gray" size={20} />
           <TextInput
-            placeholder="What would you like to order?"
+            placeholder="Where would you like to order from?"
             keyboardType="default"
           />
         </View>
         <AdjustmentsVerticalIcon color="#00CCBB" />
       </View>
+
+      {/* Body */}
+
+      <ScrollView className="bg-gray-100"
+      contentContainerStyle={{
+        paddingBottom:100,
+      }}>
+      
+      <Categories/>
+      </ScrollView>
   </SafeAreaView>
   )
 }
