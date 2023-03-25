@@ -10,6 +10,7 @@ import {
   MagnifyingGlassIcon,
   AdjustmentsVerticalIcon,
 } from "react-native-heroicons/outline" 
+import Restaurants from './Restaurants';
 
 const HomeScreen = () => {
 
@@ -50,12 +51,13 @@ useLayoutEffect(()=>{
 
       {/* Body */}
 
-      <ScrollView className="bg-gray-100"
+      <ScrollView className="bg-white"
       contentContainerStyle={{
         paddingBottom:100,
       }}>
       
       <Categories/>
+      <Restaurants/>
       </ScrollView>
   </SafeAreaView>
   )
