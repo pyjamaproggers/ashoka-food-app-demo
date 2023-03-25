@@ -1,6 +1,6 @@
 import { ScrollView, Text, View } from 'react-native'
 import React from 'react'
-import CategoryCard from './CategoryCard'
+import CategoryCard from '../components/CategoryCard'
 import THC from '../assets/THC.jpg'
 import SubwayIcon from '../assets/subwayicon.png'
 import ChicagoPizzaIcon from '../assets/chicagopizzaicon.jpg'
