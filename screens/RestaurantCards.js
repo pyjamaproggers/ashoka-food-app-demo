@@ -8,7 +8,6 @@ const RestaurantCards = ({name, image}) => {
             alignSelf: 'center',
             height: 150,
             width: 150,
-            borderWidth: 1,
             marginTop: 10
         }} source= {image}/>
       <Text className="font-semibold text-xl p-3 font-mono">{name}</Text>
