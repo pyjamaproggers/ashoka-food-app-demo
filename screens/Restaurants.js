@@ -61,7 +61,7 @@ const Restaurants = () => {
 
   return (
     <ScrollView>
-      <Text className="font-bold text-2xl text-black p-2 pb-3">Restaurants</Text>
+      <Text className="font-bold text-2xl text-black p-2 pb-3 px-2">Restaurants</Text>
       {/* <RestaurantCards name="The Hunger Cycle" image={THC}/>
       <RestaurantCards name="Chicago Pizza" image={ChicagoPizzaIcon}/>
       <RestaurantCards name="Subway" image={SubwayIcon}/>
